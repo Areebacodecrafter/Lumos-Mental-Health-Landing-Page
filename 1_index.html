@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumos – You Made It. Let’s Breathe Together.</title>
+  <link rel="stylesheet" href="2_style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Lumos</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#feel">Feel</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+    <button id="mode-toggle">🌓</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="4_hero.jpg" alt="Calm Background" class="background" />
+      <div class="hero-content">
+        <h1>You Made It. Let’s Breathe Together.</h1>
+        <p>Lumos is your gentle digital space to pause, feel, and begin healing.</p>
+      </div>
+    </section>
+
+    <section id="feel" class="section feel-section">
+      <h2 class="section-title">Name It, Feel It, Heal It</h2>
+      <div class="feel-cards">
+        <button data-room="lost">I feel lost</button>
+        <button data-room="overwhelmed">I'm overwhelmed</button>
+        <button data-room="peace">I need peace</button>
+        <button data-room="sleep">I can't sleep</button>
+      </div>
+    </section>
+
+    <section id="rooms" class="section emotion-rooms">
+      <h2 class="section-title">Explore Your Space</h2>
+      <div class="room" id="blue-room">
+        <h3>Blue Room – Overthinking</h3>
+        <img src="6_blue-room.jpg" alt="Blue Room Calm" />
+        <p>Pause. Observe. Let go of the spiral. You're here now.</p>
+      </div>
+      <div class="room" id="beige-room">
+        <h3>Beige Room – Burnout</h3>
+        <img src="7_beige-room.jpg" alt="Cookies and Calm" />
+        <p>You are not your productivity. Breathe without guilt.</p>
+      </div>
+      <div class="room" id="green-room">
+        <h3>Green Room – Loneliness</h3>
+        <img src="8_green-room.jpg" alt="Gentle Connection" />
+        <p>You are seen. You are felt. Even in silence.</p>
+      </div>
+    </section>
+
+    <section id="journal" class="section">
+      <h2 class="section-title">Your Private Space to Feel</h2>
+      <textarea id="journal-box" placeholder="Write whatever you feel..."></textarea>
+      <div class="journal-buttons">
+        <button onclick="saveJournal()">Save</button>
+        <button onclick="burnJournal()">Burn It</button>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title">Why We Care Before We Cure</h2>
+      <img src="5_about.jpg" alt="About Lumos" />
+      <p>Lumos is built on empathy. We believe feeling heard is the beginning of healing.</p>
+    </section>
+
+    <section id="support" class="section">
+      <h2 class="section-title">Help Is Not Weakness — It’s Wisdom</h2>
+      <ul class="support-list">
+        <li>Breathing Exercises</li>
+        <li>5-Minute Calm Videos</li>
+        <li>Gentle Affirmations</li>
+        <li>Emergency Resources</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>by_Areeba</p>
+  </footer>
+
+  <div id="calm-btn">🌿</div>
+  <div id="calm-modal">
+    <p>Take a deep breath...</p>
+    <div id="breath-animation"></div>
+    <audio autoplay loop src="assets/sound/calm.mp3"></audio>
+    <p>"This moment is enough."</p>
+  </div>
+
+  <script src="3_script.js"></script>
+</body>
+</html>
+
